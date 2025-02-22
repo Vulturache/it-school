@@ -1,11 +1,28 @@
 // firstproject.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
-#include <iostream>
+#include <iostream> // preprocesare 
+
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World Sandu!\n";
+    cout << "Hello World Sandu!\n\n";
+    cout << "csf nu ai csf" << endl;
+
+    int numar;
+    numar = 100;
+    cout << "numar = " << numar <<endl;
+
+        float d =4, g = 2.44, e = 32.33;
+
+    cout << "d= " << d << endl;
+    cout << "g=" << g << endl;
+    cout << "e=" << e << endl;
+
+
+
+    
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

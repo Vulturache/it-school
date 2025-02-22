@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\sandu\\Desktop\\first project\\firstproject\\",
+  "WorkspaceRootPath": "C:\\Users\\sandu\\Desktop\\it-school\\firstproject\\firstproject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AC93F075-DA49-4CDA-B4E0-2C7867FFBC91}|firstproject\\firstproject.vcxproj|C:\\Users\\sandu\\Desktop\\first project\\firstproject\\firstproject\\firstproject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{AC93F075-DA49-4CDA-B4E0-2C7867FFBC91}|firstproject\\firstproject.vcxproj|C:\\Users\\sandu\\Desktop\\it-school\\firstproject\\firstproject\\firstproject\\firstproject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{AC93F075-DA49-4CDA-B4E0-2C7867FFBC91}|firstproject\\firstproject.vcxproj|solutionrelative:firstproject\\firstproject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "firstproject.cpp",
-              "DocumentMoniker": "C:\\Users\\sandu\\Desktop\\first project\\firstproject\\firstproject\\firstproject.cpp",
+              "DocumentMoniker": "C:\\Users\\sandu\\Desktop\\it-school\\firstproject\\firstproject\\firstproject\\firstproject.cpp",
               "RelativeDocumentMoniker": "firstproject\\firstproject.cpp",
-              "ToolTip": "C:\\Users\\sandu\\Desktop\\first project\\firstproject\\firstproject\\firstproject.cpp",
+              "ToolTip": "C:\\Users\\sandu\\Desktop\\it-school\\firstproject\\firstproject\\firstproject\\firstproject.cpp",
               "RelativeToolTip": "firstproject\\firstproject.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-02-20T16:35:13.405Z",
               "EditorCaption": ""
