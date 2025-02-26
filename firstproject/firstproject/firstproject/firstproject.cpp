@@ -1,37 +1,57 @@
-// firstproject.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
-#include <iostream> // preprocesare 
-
+#include <iostream>
 using namespace std;
+#include "string.h"
+// ex.1 an bisect
 
-int main()
-{
-    cout << "Hello World Sandu!\n\n";
-    cout << "csf nu ai csf" << endl;
+//int main()
+//{
+//
+//	int x;
+//	cout << "an: "; 
+//	cin >> x;
+//	cout << (x % 4 == 0 ? "Bisect" : "non bisect");
+//
+//
+//}
 
-    int numar;
-    numar = 100;
-    cout << "numar = " << numar <<endl;
+// ex.2 5 factorial
 
-        float d =4, g = 2.44, e = 32.33;
+//int main()
+//{
+//	int x;
+//	cout << (x = 1 * 2 * 3 * 4 * 5);
+//}
 
-    cout << "d= " << d << endl;
-    cout << "g=" << g << endl;
-    cout << "e=" << e << endl;
+// ex.3 && ||
 
+//int main()
+//{
+//	int a, b, c;
+//	c = 100; 
+//	cout << "c= " << c << endl;
+//	cout << "numar a= ",	cin >> a;
+//	cout << "numar b= ", cin >> b;
+//	cout << (a > c && b > c ? "abmele sunt mai mari" : "ambele numere nu sunt mai mari") << endl;
+//	cout << (a > c || b > c ? "un numar sau mai multe sunt mai mari" : "nici un numar nu este mai mare") << endl;
+//}
 
+//ex .4 suma
 
-    
-}
+//int main()
+//{
+//
+//	int a, b, c;
+//	a = 1;
+//	b = 3;
+//	c = 5;
+//	cout << "a= " << a << endl;
+//	cout << "b= " << b << endl;
+//	cout << "c= " << c << endl;
+//	b -= a;
+//	cout << "b = b - a= " << b << endl;
+//	c /= 2;
+//	cout << "c = c/2 = " << c << endl;
+//	cout << "a + b + c = " << a + b + c << endl;
+//
+//}
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
