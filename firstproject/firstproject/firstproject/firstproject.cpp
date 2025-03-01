@@ -1,57 +1,99 @@
 #include <iostream>
 using namespace std;
 #include "string.h"
-// ex.1 an bisect
+
+//problema 2 barista robot
 
 //int main()
 //{
 //
-//	int x;
-//	cout << "an: "; 
-//	cin >> x;
-//	cout << (x % 4 == 0 ? "Bisect" : "non bisect");
+//	string s1 = "Cafea";
+//	string s2 = "Ceai";
+//	string s3 = "Suc";
+//	string s4;
+//	string s5;
+//	cout << s1 << endl;
+//	cout << s2 << endl;
+//	cout << s3 << endl;
+//	cout << "Scrieti bautura dorita: "; cin >> s4;
 //
-//
+//	if (s4 == s1)
+//	{
+//		cout << "Doriti si tort?" << endl;
+//		cin >> s5; cout << (s5 == "Da" ? "Va aducem imd" : "Poftim Cafeaua") << endl;
+//	}
+//	else if (s4 == s2)
+//	{
+//		cout << "Doriti si biscuiti?" << endl;
+//		cin >> s5; cout << (s5 == "Da" ? "Va aducem imd" : "Poftim Ceaiul") << endl;
+//	}
+//	else if (s4 == s3)
+//	{
+//		cout << "Doriti si un corn?" << endl;
+//		cin >> s5; cout << (s5 == "Da" ? "Va aducem imd" : "Poftim Sucul") << endl;
+//	}
+//	else
+//	{
+//		cout << "Nu avem produsul dorit" << endl;
+//	}
+// return 0;
 //}
 
-// ex.2 5 factorial
+// ex.1 switch operator
 
 //int main()
 //{
-//	int x;
-//	cout << (x = 1 * 2 * 3 * 4 * 5);
+//	int a, b;
+//	cout << "Primul Numar: "; cin >> a;
+//	cout << "Al doilea numar: "; cin >> b;
+//
+//	string s1 = "+";
+//	string s2 = "-";
+//	string s3 = "*";
+//	string s4 = "/";
+//	char c;
+//	cout << "Introduceti operatiunea dorita(+,-,*,/): "; cin >> c;
+//	switch (c)
+//	{
+//	case '+':
+//		cout << "Rezultatul adunari este: " << a + b << endl;
+//		break;
+//	case '-':
+//		cout << "Rezultatul scaderi este: " << a - b << endl;
+//		break;
+//	case '*':
+//		cout << "Rezultatul inmultiri este: " << a * b << endl;
+//		break;
+//	case '/':
+//		cout << "Rezultatul impartiri este: " << a / b << endl;
+//		break;
+//	default:
+//		cout << "Eroare: Operatiune Invalida" << endl;
+//	}
+//
+//		return 0;
 //}
 
-// ex.3 && ||
+//ex 2 Celsius in Kelvin/Fahrenheit
 
 //int main()
 //{
-//	int a, b, c;
-//	c = 100; 
-//	cout << "c= " << c << endl;
-//	cout << "numar a= ",	cin >> a;
-//	cout << "numar b= ", cin >> b;
-//	cout << (a > c && b > c ? "abmele sunt mai mari" : "ambele numere nu sunt mai mari") << endl;
-//	cout << (a > c || b > c ? "un numar sau mai multe sunt mai mari" : "nici un numar nu este mai mare") << endl;
-//}
-
-//ex .4 suma
-
-//int main()
-//{
+//	float f, k, c;
+//	char a;
+//	cout << "Temperatura in Celsius: "; cin >> c;
+//	cout << "Alege temperatura dorita F(Fahrenheit) or K(Kelvin): "; cin >> a;
+//	f = c * 9 / 5 + 32;
+//	k = c + 273.15;
+//	switch (a)
+//	{
+//	case 'F':
+//		cout << "Temperatura in Fahrenheit: " << f;
+//		break;
+//	case 'K':
+//		cout << "Temperatura in Kelvin: " << k;
+//		break;
+//	default:
+//		cout << "error" << endl;
 //
-//	int a, b, c;
-//	a = 1;
-//	b = 3;
-//	c = 5;
-//	cout << "a= " << a << endl;
-//	cout << "b= " << b << endl;
-//	cout << "c= " << c << endl;
-//	b -= a;
-//	cout << "b = b - a= " << b << endl;
-//	c /= 2;
-//	cout << "c = c/2 = " << c << endl;
-//	cout << "a + b + c = " << a + b + c << endl;
-//
+//	}
 //}
-
