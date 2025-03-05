@@ -2,98 +2,70 @@
 using namespace std;
 #include "string.h"
 
-//problema 2 barista robot
+// ex.1 Scrieti o functie care citeste un numar intreg de la utilizator si calculeaza suma si produsul cifrelor numarului
 
 //int main()
 //{
+//	int a, b, s = 0, p = 1;
+//	cout << "numarul intreg= "; cin >> a;
+//	while (a != 0)
+//	{
+//		b = a % 10;
+//		s = s + b;
+//		p = p * b;
+//		a = a / 10;
+//	}
+//	cout << "Suma= " << s << endl;
+//	cout << "Produs= " << p;
 //
-//	string s1 = "Cafea";
-//	string s2 = "Ceai";
-//	string s3 = "Suc";
-//	string s4;
-//	string s5;
-//	cout << s1 << endl;
-//	cout << s2 << endl;
-//	cout << s3 << endl;
-//	cout << "Scrieti bautura dorita: "; cin >> s4;
-//
-//	if (s4 == s1)
-//	{
-//		cout << "Doriti si tort?" << endl;
-//		cin >> s5; cout << (s5 == "Da" ? "Va aducem imd" : "Poftim Cafeaua") << endl;
-//	}
-//	else if (s4 == s2)
-//	{
-//		cout << "Doriti si biscuiti?" << endl;
-//		cin >> s5; cout << (s5 == "Da" ? "Va aducem imd" : "Poftim Ceaiul") << endl;
-//	}
-//	else if (s4 == s3)
-//	{
-//		cout << "Doriti si un corn?" << endl;
-//		cin >> s5; cout << (s5 == "Da" ? "Va aducem imd" : "Poftim Sucul") << endl;
-//	}
-//	else
-//	{
-//		cout << "Nu avem produsul dorit" << endl;
-//	}
-// return 0;
 //}
 
-// ex.1 switch operator
+//ex.2 scrie un program care citeste un numar intreg pozitiv de la utilizator si afiseaza numaratoare inversa de la acel numar pana la 1 folosind interactiunea do while
 
 //int main()
 //{
-//	int a, b;
-//	cout << "Primul Numar: "; cin >> a;
-//	cout << "Al doilea numar: "; cin >> b;
-//
-//	string s1 = "+";
-//	string s2 = "-";
-//	string s3 = "*";
-//	string s4 = "/";
-//	char c;
-//	cout << "Introduceti operatiunea dorita(+,-,*,/): "; cin >> c;
-//	switch (c)
-//	{
-//	case '+':
-//		cout << "Rezultatul adunari este: " << a + b << endl;
-//		break;
-//	case '-':
-//		cout << "Rezultatul scaderi este: " << a - b << endl;
-//		break;
-//	case '*':
-//		cout << "Rezultatul inmultiri este: " << a * b << endl;
-//		break;
-//	case '/':
-//		cout << "Rezultatul impartiri este: " << a / b << endl;
-//		break;
-//	default:
-//		cout << "Eroare: Operatiune Invalida" << endl;
-//	}
-//
-//		return 0;
+//	int a, inv = 0;
+//	cin >> a;
+//	do {
+//		inv = (inv + a % 10) * 10;
+//		cout << "inv= " << inv << endl;
+//		a /= 10;
+//	} while (a != 0);
+//	
+//	inv = inv / 10;
+//	cout << inv;
 //}
 
-//ex 2 Celsius in Kelvin/Fahrenheit
+//ex.3 scrie un program care calculeaza puterea unui numar folosind multiplicatii succesive, citid baza si exponendul de la utilizator
+
+//int main()
+//
+//{
+//
+//    int a, b, s = 1;
+//    cout << "Baza= ";     cin >> a;
+//    cout << "exponentul= ";   cin >> b;
+//    while (b > 0)
+//    {
+//        s = s * a;
+//        b--;
+//    }
+//
+//    cout << "Rezultat=" << s << endl;
+//
+//    return 0;
+//
+//}
+
+//ex.4 sa se scrie un algoritm care calculeaza produsul a n (citit de la tastatura) numere citite de la tastatura
 
 //int main()
 //{
-//	float f, k, c;
-//	char a;
-//	cout << "Temperatura in Celsius: "; cin >> c;
-//	cout << "Alege temperatura dorita F(Fahrenheit) or K(Kelvin): "; cin >> a;
-//	f = c * 9 / 5 + 32;
-//	k = c + 273.15;
-//	switch (a)
-//	{
-//	case 'F':
-//		cout << "Temperatura in Fahrenheit: " << f;
-//		break;
-//	case 'K':
-//		cout << "Temperatura in Kelvin: " << k;
-//		break;
-//	default:
-//		cout << "error" << endl;
-//
-//	}
+//	int n, i = 1;
+//	do {
+//		cout << "Introduceti numarul: "; cin >> n;
+//		n = n * i;
+//		++i;
+//		cout << "Produsul= " << n << endl;
+//	} while (i != 0);
 //}

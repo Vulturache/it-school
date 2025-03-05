@@ -1,3 +1,2 @@
 ﻿  firstproject.cpp
-C:\Users\sandu\Desktop\it-school\firstproject\firstproject\firstproject\firstproject.cpp(86,8): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
   firstproject.vcxproj -> C:\Users\sandu\Desktop\it-school\firstproject\firstproject\x64\Debug\firstproject.exe
