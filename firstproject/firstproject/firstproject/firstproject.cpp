@@ -1,71 +1,66 @@
 #include <iostream>
 using namespace std;
-#include "string.h"
+#include <string.h>
+#include <math.h>
+#include <vector>
+#include <set>
+#include <map>
+#include <numeric>
 
-// ex.1 Scrieti o functie care citeste un numar intreg de la utilizator si calculeaza suma si produsul cifrelor numarului
+void afisare(vector<int>& v) {
 
-//int main()
+	for (int el : v) {
+		cout << el << " ";
+	}
+	cout << endl;
+}
+
+//ex.7
+
+//int main() 
 //{
-//	int a, b, s = 0, p = 1;
-//	cout << "numarul intreg= "; cin >> a;
-//	while (a != 0)
-//	{
-//		b = a % 10;
-//		s = s + b;
-//		p = p * b;
-//		a = a / 10;
-//	}
-//	cout << "Suma= " << s << endl;
-//	cout << "Produs= " << p;
+//	vector<int> v = { 2,4,6,8,10 };
 //
-//}
-
-//ex.2 scrie un program care citeste un numar intreg pozitiv de la utilizator si afiseaza numaratoare inversa de la acel numar pana la 1 folosind interactiunea do while
-
-//int main()
-//{
-//	int a, inv = 0;
-//	cin >> a;
-//	do {
-//		inv = (inv + a % 10) * 10;
-//		cout << "inv= " << inv << endl;
-//		a /= 10;
-//	} while (a != 0);
+//	int suma = accumulate(v.begin(), v.end(), 0);
+//	cout << "Suma numerelor este= " << suma;
 //	
-//	inv = inv / 10;
-//	cout << inv;
-//}
-
-//ex.3 scrie un program care calculeaza puterea unui numar folosind multiplicatii succesive, citid baza si exponendul de la utilizator
-
-//int main()
+//	//int suma = 0;
+//	//for (vector<int>::iterator i = v.begin(); i != v.end(); i++)
+//	//{
+//	//	suma = suma + *i;
+//	//}
+//	//cout << "Suma numerelor este= " << suma;
+//	
 //
-//{
-//
-//    int a, b, s = 1;
-//    cout << "Baza= ";     cin >> a;
-//    cout << "exponentul= ";   cin >> b;
-//    while (b > 0)
-//    {
-//        s = s * a;
-//        b--;
-//    }
-//
-//    cout << "Rezultat=" << s << endl;
-//
-//    return 0;
+//	
 //
 //}
 
-//ex.4 sa se scrie un algoritm care calculeaza produsul a n (citit de la tastatura) numere citite de la tastatura
+
+//ex.8
+
+//int main() 
+//{
+//	vector<int> v = { 1,2,3,4,5 };
+//
+//	for (auto i = v.rbegin(); i != v.rend(); i++)
+//	{
+//		cout << " " << *i;
+//	}
+//	
+//
+//}
+
+//ex.9
 
 //int main()
 //{
-//	int n, i = 1;
-//	do {
-//		cout << "Introduceti numarul: "; cin >> n;
-//		n = n * i;
-//		++i;
-//		cout << "Produsul= " << n << endl;
-//	} while (i != 0);
+//	vector<int> v = { 1,2,2,3,4,4,5 };
+//	afisare(v);
+//	v.erase(v.begin() + 1);
+//	v.erase(v.begin() + 4);
+//	afisare(v);
+//
+//
+//
 //}
