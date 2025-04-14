@@ -1,2 +1,4 @@
 ﻿  firstproject.cpp
+C:\Users\sandu\Desktop\it-school\firstproject\firstproject\firstproject\firstproject.cpp(69,12): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\sandu\Desktop\it-school\firstproject\firstproject\firstproject\firstproject.cpp(69,7): warning C4305: 'argument': truncation from 'double' to 'float'
   firstproject.vcxproj -> C:\Users\sandu\Desktop\it-school\firstproject\firstproject\x64\Debug\firstproject.exe

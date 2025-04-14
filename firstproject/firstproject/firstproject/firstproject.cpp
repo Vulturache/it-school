@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 using namespace std;
 #include <string.h>
 #include <math.h>
@@ -6,99 +6,71 @@ using namespace std;
 #include <set>
 #include <map>
 #include <numeric>
+#include <algorithm>
 
-// ex. 4
+//Creează o clasă Rectangle care să aibă următoarele atribute :
+//length(float),
+//width(float).
+//
+//Implementează :
+//	Constructor implicit care setează lungimea și lățimea la 0.
+//	Constructor parametrizat care primește lungimea și lățimea ca parametri.
+//	Destructor care va afișa un mesaj când obiectul este distrus.
+//	Metodă area() care returnează aria dreptunghiului(length * width).
+//	Metodă perimeter() care returnează perimetrul dreptunghiului(2 * (length + width)).
 
-void swap_r(int& a, int& b)
+class Rectangle
 {
-	int temp = 0;
-	temp = a;
-	a = b;
-	b = temp;
 
-}
+private:
+	float* lenght = new float;
+	float* width = new float;
+public:
+	Rectangle()
+	{
+		*lenght = 0;
+		*width = 0;
+	}
+	Rectangle(float l, float w)
+	{
+	
+		*lenght = l;
+		*width = w;
 
-// ex. 5
-
-void swap_p(int* a, int* b)
-{
-	int temp = 0;
-	temp = *a;
-	*a = *b;
-	*b = temp;
-
-}
-
-
-//int main() 
-//{
-//
-//	int a;
-//	int b;
-//	cout << "Primul numar= "; cin >> a;
-//	cout << "Al doilea numar= "; cin >> b;
-//
-//	swap_r(a, b);
-//	cout << "Rezultatul inversari prin referinta este= ";
-//	cout << a << " ";
-//	cout << b;}
-
-//int main(){
-//
-//	int* a = new int;
-//	int* b = new int;
-//	cout << "Primul numar= "; cin >> *a;
-//	cout << "Al doilea numar= "; cin >> *b;
-//
-//	swap_p(a, b);
-//	cout << "Rezultatul inversari prin pointers este= ";
-//	cout << *a << " ";
-//	cout << *b;
-//}
-
-//ex. 2
-
-struct Produs
-{
-	float pret;
-	string produs;
-	int nrdeproduse;
+	}
+	float area()
+	{
+		float a = 0;
+		a = *lenght * *width;
+		cout << a << endl;
+		return a;
+	}
+	float perimeter()
+	{
+		float p;
+		p = (2 * (*lenght + *width));
+		cout << p << endl;
+		return p;
+	}
+	~Rectangle()
+	{
+		delete lenght, width;
+		cout << "Obiectul a fost distrus" << endl;
+	}
 };
 
-void afisareProd(const vector<Produs> v)
-{
-	for (auto el : v)
-	{
-		cout << el.produs << " " << el.pret << " " << el.nrdeproduse << " " << endl;
-	}
-}
+typedef Rectangle R;
 
-int main()
+int main() 
 {
-	
-	vector<Produs> v;
-	int n;
-	cout << "Introduceti numarul de produse in magazin= "; cin >> n;
-	for (int i = 0; i < n; i++)
-	{
-		int temp;
-		float temp2;
-		string temp3;
-		cout << "Introduceti numarul de produse in stoc= "; cin >> temp;
-		cout << "Introduceti pretul produselor= "; cin >> temp2;
-		cout << "Introduceti numele produsului= "; cin >> temp3;
-		Produs p1;
-		p1.nrdeproduse = temp;
-		p1.pret = temp2;
-		p1.produs = temp3;
-		v.push_back(p1);
+	R n;
+	n.area();
+	n.perimeter();
+	R n1(2.1, 2.2);
+	n1.area();
+	n1.perimeter();
 
-	}
-	
-	afisareProd(v);
-	
+
+
 
 }
-
-
-
