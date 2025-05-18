@@ -8,69 +8,24 @@ using namespace std;
 #include <numeric>
 #include <algorithm>
 
-//Creează o clasă Rectangle care să aibă următoarele atribute :
-//length(float),
-//width(float).
-//
-//Implementează :
-//	Constructor implicit care setează lungimea și lățimea la 0.
-//	Constructor parametrizat care primește lungimea și lățimea ca parametri.
-//	Destructor care va afișa un mesaj când obiectul este distrus.
-//	Metodă area() care returnează aria dreptunghiului(length * width).
-//	Metodă perimeter() care returnează perimetrul dreptunghiului(2 * (length + width)).
-
-class Rectangle
+int main()
 {
-
-private:
-	float* lenght = new float;
-	float* width = new float;
-public:
-	Rectangle()
+	int a;
+	cout << "Introduceti nota intre 0 si 10: "; cin >> a;
+	try
 	{
-		*lenght = 0;
-		*width = 0;
+		if (a < 0 || a > 10)
+		{
+			throw runtime_error("Nota introdusa nu este valida\n");
+		}
+		else
+		{
+			cout << "Nota dumneavoastra este: " << a;
+		}
 	}
-	Rectangle(float l, float w)
+	catch (const runtime_error& e)
 	{
-	
-		*lenght = l;
-		*width = w;
-
+		cout << e.what() << endl;
 	}
-	float area()
-	{
-		float a = 0;
-		a = *lenght * *width;
-		cout << a << endl;
-		return a;
-	}
-	float perimeter()
-	{
-		float p;
-		p = (2 * (*lenght + *width));
-		cout << p << endl;
-		return p;
-	}
-	~Rectangle()
-	{
-		delete lenght, width;
-		cout << "Obiectul a fost distrus" << endl;
-	}
-};
-
-typedef Rectangle R;
-
-int main() 
-{
-	R n;
-	n.area();
-	n.perimeter();
-	R n1(2.1, 2.2);
-	n1.area();
-	n1.perimeter();
-
-
-
-
 }
+
